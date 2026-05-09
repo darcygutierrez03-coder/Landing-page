@@ -81,7 +81,7 @@ export default function Hero() {
         transition={{ delay: 1, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
       >
         <motion.img 
-          src="/darcy.png" 
+          src="/Darcy.png" 
           alt="Darcy Gutierrez" 
           className={styles.photo}
         />
