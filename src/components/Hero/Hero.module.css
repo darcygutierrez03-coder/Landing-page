@@ -1,0 +1,97 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-top: 8rem;
+  width: 100%;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 1rem 0;
+}
+
+.sub {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 500px;
+  margin: 1.5rem 0 2.5rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .title { font-size: 2.6rem; }
+}
+
+/* Photo Integration */
+.photoWrapper {
+  position: absolute;
+  right: 2%;
+  bottom: 0;
+  width: 50%;
+  height: 95%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.photo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.4)) contrast(1.05);
+}
+
+.photoGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--void) 5%, transparent 40%),
+              linear-gradient(to right, var(--void) 0%, transparent 20%);
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .photoWrapper {
+    width: 40%;
+    right: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .photoWrapper {
+    opacity: 0.3; /* Subtle background presence on mobile */
+    width: 60%;
+    right: -10%;
+    bottom: 5%;
+    z-index: -1;
+  }
+}
