@@ -20,24 +20,29 @@
   padding: 0 2rem;
   padding-top: 8rem;
   width: 100%;
+  text-align: left;
 }
 
 .title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(3rem, 6vw, 5.5rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
   margin: 1rem 0;
+  text-align: left;
+  max-width: 60%;
 }
 
-.sub {
-  font-size: 1.1rem;
+.subItalic {
+  font-size: 1.2rem;
   color: var(--muted);
-  max-width: 500px;
+  max-width: 55%;
   margin: 1.5rem 0 2.5rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: italic;
   line-height: 1.75;
+  text-align: left;
 }
 
 .actions {
@@ -93,5 +98,8 @@
     right: -10%;
     bottom: 5%;
     z-index: -1;
+  }
+  .title, .subItalic {
+    max-width: 100%;
   }
 }

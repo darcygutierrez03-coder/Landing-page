@@ -31,7 +31,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          Estrategia · Diseño · Marca Personal
+          · Liderazgo · Gestión · Innovación
         </motion.p>
 
         <motion.h1
@@ -40,22 +40,20 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          Potencio tu
+          Gestión del Talento
           <br />
-          <span className="ag-gradient-text">impacto personal</span>
+          con una Visión de
           <br />
-          en el mundo digital.
+          <span className="ag-gradient-text">Negocio Real</span>
         </motion.h1>
 
         <motion.p
-          className={styles.sub}
+          className={styles.subItalic}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.7 }}
         >
-          Consultoría de autor. Estrategia de alto nivel.
-          <br />
-          Soluciones que elevan tu marca personal a nuevas alturas.
+          "Entiendo el mercado, transformo las personas y formo los líderes que las organizaciones necesitan."
         </motion.p>
 
         <motion.div
