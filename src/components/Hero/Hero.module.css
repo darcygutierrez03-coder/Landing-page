@@ -32,6 +32,7 @@
   margin: 1rem 0;
   text-align: left;
   max-width: 60%;
+  color: var(--text);
 }
 
 .subItalic {
@@ -65,29 +66,38 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  z-index: 0;
+  z-index: 2;
   pointer-events: none;
 }
 
 .photoWrapper::before {
   content: '';
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  background: radial-gradient(circle, rgba(4, 138, 191, 0.15) 0%, transparent 70%);
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, 
+    rgba(4, 138, 191, 0.8) 0%, 
+    rgba(59, 154, 191, 0.4) 40%, 
+    transparent 75%);
   border-radius: 50%;
   z-index: -1;
-  filter: blur(20px);
+  filter: blur(40px);
+  animation: corporate-glow 8s ease-in-out infinite alternate;
+}
+
+@keyframes corporate-glow {
+  0% { opacity: 0.7; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 1; transform: translate(-49%, -51%) scale(1.15); }
 }
 
 .photo {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.85)) contrast(1.05);
+  filter: drop-shadow(0 0 20px rgba(4, 138, 191, 0.25)) drop-shadow(15px 15px 30px rgba(0, 0, 0, 0.7)) contrast(1.05);
 }
 
 .photoGradient {
@@ -116,4 +126,13 @@
   .title, .subItalic {
     max-width: 100%;
   }
+}
+
+[data-theme='light'] .photoWrapper::before {
+  opacity: 0.1;
+  filter: blur(120px);
+  transform: translate(-35%, -45%) scale(0.9);
+  background: radial-gradient(circle, 
+    var(--sky) 0%, 
+    transparent 60%);
 }

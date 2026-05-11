@@ -2,7 +2,7 @@
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  padding: 1.25rem 2rem;
+  padding: 1.75rem 4rem;
   transition: background 0.4s, backdrop-filter 0.4s, border-bottom 0.4s;
 }
 
@@ -43,6 +43,12 @@
   flex-shrink: 0;
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .hamburger {
   display: none;
   background: none;
@@ -76,6 +82,6 @@
 
 @media (max-width: 960px) {
   .links { display: none; }
-  .cta   { display: none; }
+  .actions { display: none; }
   .hamburger { display: block; margin-left: auto; }
 }

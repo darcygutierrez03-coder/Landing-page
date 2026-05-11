@@ -32,16 +32,27 @@
   --transition-slow:   0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+[data-theme='light'] {
+  --void:     #f5f9ff;
+  --surface:  #ffffff;
+  --text:     #1a2a3a;
+  --muted:    #5a7a9a;
+  
+  --navy:     #d1e4ff;
+  --mid:      #a8c7ff;
+}
+
 /* ── Base ────────────────────────────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
+  font-size: 110%;
 }
 
 body {
   background: var(--void);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1.1rem;
   line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -136,19 +147,42 @@ img, canvas {
 
 /* ── Tags ────────────────────────────────────────────────────────────────────── */
 .ag-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
 }
 
 .ag-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(4, 138, 191, 0.04);
+  border: 1px solid rgba(4, 138, 191, 0.1);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 0.85rem 1.4rem;
+  font-size: 0.95rem;
+  transition: all var(--transition-normal);
+}
+
+.ag-tag:hover {
   background: rgba(4, 138, 191, 0.1);
-  border: 1px solid rgba(4, 138, 191, 0.2);
-  color: var(--sky);
-  border-radius: var(--radius-sm);
-  padding: 0.3rem 0.75rem;
-  font-size: 0.8rem;
+  border-color: var(--electric);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.ag-tag__icon {
+  color: var(--electric);
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+[data-theme='light'] .ag-tag {
+  background: white;
+  border-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
 }
 
 /* ── Stars ───────────────────────────────────────────────────────────────────── */
@@ -248,6 +282,10 @@ img, canvas {
   transform: translate(-50%, -50%);
 }
 
+[data-theme='light'] .ag-glow-cursor {
+  background: radial-gradient(circle, rgba(4, 138, 191, 0.05) 0%, transparent 70%);
+}
+
 /* ── Magnetic Button Base ────────────────────────────────────────────────────── */
 .ag-magnetic {
   border: none;
@@ -293,9 +331,9 @@ img, canvas {
 }
 
 .ag-btn--ghost {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--muted);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(59, 154, 191, 0.3);
+  color: var(--text);
 }
 
 .ag-btn--ghost:hover {

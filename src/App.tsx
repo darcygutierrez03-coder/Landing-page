@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import Navbar from '@/components/Navbar/Navbar'
 import Hero from '@/components/Hero/Hero'
 import About from '@/components/About/About'
+import Philosophy from '@/components/Philosophy/Philosophy'
 import Services from '@/components/Services/Services'
 import Portfolio from '@/components/Portfolio/Portfolio'
 import Testimonials from '@/components/Testimonials/Testimonials'
@@ -19,6 +20,7 @@ function App() {
           <Hero />
         </Suspense>
         <About />
+        <Philosophy />
         <Services />
         <Portfolio />
         <Testimonials />

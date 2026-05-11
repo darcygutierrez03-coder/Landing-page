@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ArrowRight } from 'lucide-react'
 import { NAV_LINKS } from '@/data'
 import { useScrolled } from '@/hooks/useScrolled'
-import { MagneticBtn } from '@/components/UI'
+import { MagneticBtn, ThemeToggle } from '@/components/UI'
 import styles from './Navbar.module.css'
 
 export default function Navbar() {
@@ -36,9 +36,12 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <MagneticBtn className={`ag-btn ag-btn--outline ${styles.cta}`}>
-          Hablemos <ArrowRight size={14} />
-        </MagneticBtn>
+        <div className={styles.actions}>
+          <MagneticBtn className={`ag-btn ag-btn--outline ${styles.cta}`}>
+            Hablemos <ArrowRight size={14} />
+          </MagneticBtn>
+          <ThemeToggle />
+        </div>
 
         <button
           className={styles.hamburger}

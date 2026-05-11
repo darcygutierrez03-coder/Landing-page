@@ -1,4 +1,4 @@
-import { Code2, Layers, Zap, Globe, Shield, Cpu, type LucideIcon } from 'lucide-react'
+import { Code2, Layers, Zap, Globe, Shield, Cpu, Users, BookOpen, type LucideIcon } from 'lucide-react'
 
 // ── Palette ────────────────────────────────────────────────────────────────────
 export const COLORS = {
@@ -105,13 +105,53 @@ export const TESTIMONIALS: Testimonial[] = [
 
 // ── Tech Stack Tags ─────────────────────────────────────────────────────────────
 export const TECH_TAGS = [
-  'React', 'TypeScript', 'Node.js', 'Python',
-  'AWS', 'Figma', 'Three.js', 'LLMs',
+  { label: 'Capital Humano', icon: 'Users' },
+  { label: 'Cultura org.', icon: 'Building2' },
+  { label: 'Marketing Estratégico', icon: 'Lightbulb' },
+  { label: 'Liderazgo Ágil', icon: 'Zap' },
+  { label: 'Change Management', icon: 'RefreshCw' },
+  { label: 'Investigación I+D', icon: 'Search' },
+  { label: 'Docencia Universitaria', icon: 'GraduationCap' },
+  { label: 'Gestión del Talento', icon: 'Star' },
+  { label: 'Desarrollo de Equipos', icon: 'Users' },
+  { label: 'Diseño de Estrategia', icon: 'Compass' },
+  { label: 'Networking', icon: 'Share2' },
+  { label: 'Visión Multisectorial', icon: 'Globe' },
 ]
 
 // ── Stats ──────────────────────────────────────────────────────────────────────
 export const STATS = [
-  { num: '8+',  label: 'Años de experiencia' },
-  { num: '60+', label: 'Proyectos entregados' },
+  { num: '4',   label: 'Años de experiencia' },
+  { num: '40+', label: 'Proyectos entregados' },
   { num: '100%',label: 'Clientes satisfechos' },
 ]
+
+// ── Philosophy ─────────────────────────────────────────────────────────────────
+export const PHILOSOPHY_DATA = {
+  title: "Mi Filosofía de Trabajo",
+  slogan: "\"Un enfoque integral para generar impacto real\"",
+  axes: [
+    {
+      id: "eje-1",
+      number: "Eje 1: El Mercado",
+      title: "Visión y Estrategia",
+      description: "Diagnóstico y alineación de objetivos corporativos con el entorno global para asegurar un crecimiento sostenible.",
+      icon: "Globe"
+    },
+    {
+      id: "eje-2",
+      number: "Eje 2: Las Personas",
+      title: "Cultura y Humanidad",
+      description: "Diseño de culturas organizacionales resilientes que priorizan el bienestar humano como motor de la productividad.",
+      icon: "Users"
+    },
+    {
+      id: "eje-3",
+      number: "Eje 3: La Formación",
+      title: "Crecimiento y Liderazgo",
+      description: "Formación de líderes de alto impacto y programas de capacitación basados en investigación y docencia de vanguardia.",
+      icon: "BookOpen"
+    }
+  ]
+}
+

@@ -43,11 +43,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          Gestión del Talento
+          <span className="ag-gradient-text">Gestión del Talento</span>
           <br />
           con una Visión de
           <br />
-          <span className="ag-gradient-text">Negocio Real</span>
+          Negocio Real
         </motion.h1>
 
         <motion.p
@@ -86,7 +86,7 @@ export default function Hero() {
           alt="Darcy Gutierrez" 
           className={styles.photo}
         />
-        <div className={styles.photoGradient}></div>
+
       </motion.div>
 
       {/* Scroll indicator */}
