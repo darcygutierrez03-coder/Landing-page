@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         <a href="#" className="ag-logo">
           <span className="ag-logo__mark">DG</span>
-          <span className="ag-logo__text">Darcy Gutierrez</span>
+          <span className="ag-logo__text">DARCY GUTIERREZ</span>
         </a>
 
         <ul className={styles.links}>
