@@ -14,7 +14,7 @@
 
 .content {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -58,7 +58,7 @@
 /* Photo Integration */
 .photoWrapper {
   position: absolute;
-  right: 2%;
+  right: 5%;
   bottom: 0;
   width: 50%;
   height: 85%;

@@ -8,7 +8,10 @@ import styles from './Hero.module.css'
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null!)
-  const { scrollYProgress } = useScroll({ target: ref })
+  const { scrollYProgress } = useScroll({ 
+    target: ref,
+    offset: ["start start", "end start"]
+  })
   const y       = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
   const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0])
 
