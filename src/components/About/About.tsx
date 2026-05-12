@@ -46,6 +46,9 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
+            <motion.p variants={fadeUp} className="ag-eyebrow" style={{ marginBottom: '1.5rem', color: 'var(--electric)' }}>
+              // SOBRE MÍ
+            </motion.p>
             <motion.h2 variants={fadeUp} className={styles.title}>
               Donde la <span className={styles.gradientEvolution}>transformación humana</span> redefine el <span className={styles.blueHighlight}>éxito corporativo.</span>
             </motion.h2>

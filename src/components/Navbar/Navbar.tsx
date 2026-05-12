@@ -38,7 +38,7 @@ export default function Navbar() {
 
         <div className={styles.actions}>
           <MagneticBtn className={`ag-btn ag-btn--outline ${styles.cta}`}>
-            Hablemos <ArrowRight size={14} />
+            Iniciar Proyecto <ArrowRight size={14} />
           </MagneticBtn>
           <ThemeToggle />
         </div>

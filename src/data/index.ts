@@ -16,10 +16,11 @@ export const COLORS = {
 // ── Navigation ─────────────────────────────────────────────────────────────────
 export const NAV_LINKS = [
   'Inicio',
-  'Mi Historia',
-  'Experticia',
-  'Proyectos',
-  'Opiniones',
+  'Sobre mi',
+  'Mi filosofia',
+  'Servicios',
+  'Portafolio',
+  'Testimonio',
   'Contacto',
 ]
 
