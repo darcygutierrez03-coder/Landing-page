@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
-import { Reveal } from '@/components/UI'
 import { STATS, TECH_TAGS } from '@/data'
-import { fadeUp, staggerContainer } from '@/animations/variants'
+import { fadeUp } from '@/animations/variants'
 import styles from './About.module.css'
 import * as Icons from 'lucide-react'
 

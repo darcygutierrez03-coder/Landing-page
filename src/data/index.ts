@@ -1,4 +1,4 @@
-import { Code2, Layers, Zap, Globe, Shield, Cpu, Users, BookOpen, type LucideIcon } from 'lucide-react'
+import { Code2, Layers, Zap, Globe, Shield, Cpu, type LucideIcon } from 'lucide-react'
 
 // ── Palette ────────────────────────────────────────────────────────────────────
 export const COLORS = {
