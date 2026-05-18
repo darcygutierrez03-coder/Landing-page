@@ -1,4 +1,4 @@
-import { ArrowRight, Mail } from 'lucide-react'
+import { ArrowRight, Mail, Linkedin, Instagram, Twitter } from 'lucide-react'
 import { Reveal, MagneticBtn } from '@/components/UI'
 import styles from './CTA.module.css'
 
@@ -27,6 +27,18 @@ export default function CTA() {
               >
                 <Mail size={18} /> darcygc160309@gmail.com
               </MagneticBtn>
+            </div>
+            
+            <div className={styles.socials}>
+              <a href="https://www.linkedin.com/notifications/?filter=all" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <Linkedin size={20} /> LinkedIn
+              </a>
+              <a href="https://www.instagram.com/darcygutierrez_c?igsh=MXIzYXIwYzN3NHptZw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <Instagram size={20} /> Instagram
+              </a>
+              <a href="https://x.com/darcygutierrez_?s=11" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <Twitter size={20} /> Twitter
+              </a>
             </div>
           </Reveal>
         </div>

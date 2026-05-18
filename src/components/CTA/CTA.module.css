@@ -45,3 +45,29 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.socials {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--electric);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.socialLink:hover {
+  color: var(--sky);
+  transform: translateY(-2px);
+}
