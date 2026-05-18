@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Mail } from 'lucide-react'
 import { Reveal, MagneticBtn } from '@/components/UI'
 import styles from './CTA.module.css'
 
@@ -11,18 +11,21 @@ export default function CTA() {
           <Reveal>
             <p className="ag-eyebrow ag-center">¿Listo para despegar?</p>
             <h2 className={styles.title}>
-              Tu próximo proyecto<br />
-              <span className="ag-gradient-text">merece lo mejor.</span>
+              Transformemos la cultura.<br />
+              <span className="ag-gradient-text">Elevemos el éxito.</span>
             </h2>
             <p className={styles.sub}>
-              Cuéntame tu visión. En 24 horas tienes mi respuesta y un plan de acción.
+              ¿Listo para hackear los modelos tradicionales? Diseñemos juntos una estrategia ágil, humana y competitiva que lleve a tu organización al siguiente nivel. El cambio no ocurre por decreto, empieza con una conversación.
             </p>
             <div className={styles.actions}>
-              <MagneticBtn className="ag-btn ag-btn--primary ag-btn--lg">
-                Iniciar proyecto <ArrowRight size={18} />
+              <MagneticBtn className="ag-btn ag-btn--primary ag-btn--lg" onClick={() => window.location.href = 'mailto:darcygc160309@gmail.com'}>
+                Hablemos <ArrowRight size={18} />
               </MagneticBtn>
-              <MagneticBtn className="ag-btn ag-btn--ghost ag-btn--lg">
-                Ver servicios
+              <MagneticBtn 
+                className="ag-btn ag-btn--ghost ag-btn--lg"
+                onClick={() => window.location.href = 'mailto:darcygc160309@gmail.com'}
+              >
+                <Mail size={18} /> darcygc160309@gmail.com
               </MagneticBtn>
             </div>
           </Reveal>
