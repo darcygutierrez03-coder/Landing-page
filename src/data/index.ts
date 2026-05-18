@@ -88,19 +88,19 @@ export interface Testimonial {
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: 'Camila R.',
-    role: 'CTO · Fintech startup',
-    text: 'Transformó nuestra arquitectura heredada en algo que el equipo ama trabajar. La velocidad de entrega se duplicó en 3 meses.',
+    name: 'Alejandro Restrepo',
+    role: 'VP de Operaciones y Tecnología en TechNova Solutions',
+    text: 'Llegamos a un punto donde las metodologías ágiles no avanzaban por la resistencia cultural del equipo. Darcy no implementó un manual; <strong>hackeó nuestra mentalidad desde las bases</strong>. Logró alinear los objetivos de negocio con el bienestar de la gente. Hoy no solo somos más rápidos, sino un equipo genuinamente más humano.',
   },
   {
-    name: 'Diego M.',
-    role: 'Founder · SaaS B2B',
-    text: 'El nivel de detalle en cada decisión técnica es impresionante. No solo construye, enseña y eleva al equipo completo.',
+    name: 'Juliana Mendoza',
+    role: 'Directora Corporativa de Gestión Humana - TransLogik S.A.',
+    text: 'En el sector de transporte la cultura suele ser muy rígida y piramidal. Darcy llegó a romper paradigmas con su visión estratégica combinada de mercadeo y talento. Nos ayudó a rediseñar un modelo de liderazgo ágil y descentralizado. Por primera vez, los líderes <strong>no dirigen por decreto, inspiran por el ejemplo</strong>.',
   },
   {
-    name: 'Valentina S.',
-    role: 'Head of Product',
-    text: 'Por primera vez tuve a alguien que habla igual de bien con diseñadores que con ingenieros. Un multiplicador de equipo.',
+    name: 'Carlos Eduardo Gómez',
+    role: 'CEO & Cofundador de NextGen Digital',
+    text: '<strong>Entender que el talento es nuestro cliente interno más importante cambió las reglas del juego</strong>. Con Darcy diseñamos una estrategia de Employer Branding tan sólida que pasamos de buscar candidatos a que el mejor talento nos busque a nosotros. Una inversión con un retorno incalculable para nuestra marca.',
   },
 ]
 

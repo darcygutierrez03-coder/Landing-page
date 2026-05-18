@@ -13,7 +13,7 @@ export default function Testimonials() {
           <p className="ag-eyebrow ag-center">Testimonios</p>
           <h2 className="ag-section__title ag-center">
             Lo que dicen<br />
-            <span className="ag-gradient-text">quienes lo vivieron.</span>
+            <span className="ag-gradient-text">quienes han evolucionado conmigo.</span>
           </h2>
         </Reveal>
 
@@ -31,7 +31,7 @@ export default function Testimonials() {
                   <Star key={i} size={14} fill={COLORS.electric} color={COLORS.electric} />
                 ))}
               </div>
-              <p className={styles.text}>"{t.text}"</p>
+              <p className={styles.text} dangerouslySetInnerHTML={{ __html: `"${t.text}"` }} />
               <div className={styles.author}>
                 <div className={styles.avatar} />
                 <div>

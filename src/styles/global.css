@@ -190,6 +190,7 @@ img, canvas {
   display: flex;
   gap: 3px;
   margin-bottom: 1.25rem;
+  filter: drop-shadow(0 0 6px var(--electric));
 }
 
 /* ── Scroll Hint ─────────────────────────────────────────────────────────────── */

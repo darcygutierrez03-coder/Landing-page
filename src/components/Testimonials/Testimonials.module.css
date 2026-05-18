@@ -8,11 +8,10 @@
 .card { /* extends ag-card */ }
 
 .text {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--muted);
   line-height: 1.75;
   margin-bottom: 1.5rem;
-  font-style: italic;
 }
 
 .author {
