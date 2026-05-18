@@ -11,7 +11,7 @@ export default function Testimonials() {
       <div className="ag-container">
         <Reveal>
           <p className="ag-eyebrow ag-center">Testimonios</p>
-          <h2 className="ag-section__title ag-center">
+          <h2 className={styles.title}>
             Lo que dicen<br />
             <span className="ag-gradient-text">quienes han evolucionado conmigo.</span>
           </h2>
