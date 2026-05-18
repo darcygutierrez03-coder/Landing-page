@@ -10,9 +10,9 @@ export default function Services() {
       <div className="ag-container">
         <Reveal>
           <p className="ag-eyebrow ag-center">Servicios</p>
-          <h2 className="ag-section__title ag-center">
+          <h2 className={styles.title}>
             Lo que puedo<br />
-            <span className="ag-gradient-text">hacer por ti.</span>
+            <span className={styles.gradientEvolution}>hacer por ti.</span>
           </h2>
         </Reveal>
 

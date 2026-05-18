@@ -2,6 +2,24 @@
   background: rgba(3, 76, 140, 0.04);
 }
 
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.gradientEvolution {
+  background: linear-gradient(90deg, var(--sky) 0%, var(--text) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
