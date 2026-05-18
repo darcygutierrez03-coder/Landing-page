@@ -11,7 +11,7 @@ const icons = {
 
 export default function Philosophy() {
   return (
-    <section className={styles.philosophy} id="mi-filosofía">
+    <section className={styles.philosophy} id="mi-filosofia">
       <div className={styles.inner}>
         <motion.div 
           className={styles.header}

@@ -7,7 +7,7 @@ import styles from './Testimonials.module.css'
 
 export default function Testimonials() {
   return (
-    <section className="ag-section" id="testimonios">
+    <section className="ag-section" id="testimonio">
       <div className="ag-container">
         <Reveal>
           <p className="ag-eyebrow ag-center">Testimonios</p>

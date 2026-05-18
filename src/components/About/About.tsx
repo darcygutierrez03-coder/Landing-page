@@ -6,7 +6,7 @@ import * as Icons from 'lucide-react'
 
 export default function About() {
   return (
-    <section className={`ag-section ${styles.about}`} id="sobre-mí">
+    <section className={`ag-section ${styles.about}`} id="sobre-mi">
       <div className="ag-container">
         <div className={styles.grid}>
           {/* Column 1: Visual (Photo + Items) */}
