@@ -1,4 +1,4 @@
-import { Code2, Layers, Zap, Globe, Shield, Cpu, type LucideIcon } from 'lucide-react'
+import { Magnet, Zap, Route, GraduationCap, Users, TrendingUp, type LucideIcon } from 'lucide-react'
 
 // ── Palette ────────────────────────────────────────────────────────────────────
 export const COLORS = {
@@ -29,38 +29,45 @@ export interface Service {
   icon: LucideIcon
   title: string
   desc: string
+  tags: string[]
 }
 
 export const SERVICES: Service[] = [
   {
-    icon: Code2,
-    title: 'Consultoría Estratégica',
-    desc: 'Optimizo procesos y defino hojas de ruta para negocios que buscan una transformación digital coherente y escalable.',
-  },
-  {
-    icon: Layers,
-    title: 'Marca Personal Premium',
-    desc: 'Diseño identidades visuales que capturan la esencia del profesional, creando una presencia digital inolvidable.',
+    icon: Magnet,
+    title: 'Employer Branding Estratégico',
+    desc: 'Conecto el mercadeo con la gestión humana para diseñar marcas empleadoras magnéticas. Creamos propuestas de valor al colaborador (EVP) que atraen y fidelizan al mejor talento del mercado.',
+    tags: ['Mercadeo', 'Talento', 'EVP'],
   },
   {
     icon: Zap,
-    title: 'Desarrollo de Producto',
-    desc: 'Transformo ideas en soluciones digitales tangibles, priorizando la experiencia del usuario y la eficiencia técnica.',
+    title: 'Hacking Cultural & Agilidad',
+    desc: 'Intervengo y transformo culturas corporativas tradicionales. Diseñamos modelos de liderazgo ágiles, descentralizados y humanos que rompen silos y convierten la cultura en una ventaja competitiva.',
+    tags: ['Liderazgo', 'Cultura', 'Agilidad'],
   },
   {
-    icon: Globe,
-    title: 'Estrategia de Contenido',
-    desc: 'Planificación y creación de narrativas que conectan marcas con audiencias reales en el entorno digital.',
+    icon: Route,
+    title: 'Optimización del Employee Journey',
+    desc: 'Evaluo y rediseño cada punto de contacto en el ciclo de vida del colaborador. Desde el onboarding hasta el desarrollo, garantizando experiencias de alto impacto y bienestar real.',
+    tags: ['Bienestar', 'Experiencia', 'Procesos'],
   },
   {
-    icon: Shield,
-    title: 'Gestión de Proyectos',
-    desc: 'Liderazgo técnico y creativo para asegurar que cada entrega cumpla con los más altos estándares de calidad.',
+    icon: GraduationCap,
+    title: 'Educación Corporativa & Upskilling',
+    desc: 'Traslado mi experiencia en las aulas universitarias al ecosistema empresarial. Creo programas de formación a la medida y academias internas enfocadas en el desarrollo de competencias del futuro.',
+    tags: ['Educación', 'Formación', 'Desarrollo'],
   },
   {
-    icon: Cpu,
-    title: 'Innovación Digital',
-    desc: 'Implementación de nuevas tecnologías y tendencias para mantener tu marca a la vanguardia del mercado.',
+    icon: Users,
+    title: 'Endomarketing & Cultura Conectada',
+    desc: 'Las organizaciones no cambian por decreto. Diseñamos narrativas de comunicación interna estratégicas que inspiran, alinean a los equipos con el propósito de la empresa y movilizan el cambio.',
+    tags: ['Estrategia', 'Conexión', 'Propósito'],
+  },
+  {
+    icon: TrendingUp,
+    title: 'Consultoría en Transformación Humana',
+    desc: 'Acompañamiento estratégico senior para comités directivos. Diseñamos la hoja de ruta para guiar a tu organización hacia modelos de negocio más adaptables, ágiles y, sobre todo, profundamente humanos.',
+    tags: ['Gestión', 'Evolución', 'Resultados'],
   },
 ]
 

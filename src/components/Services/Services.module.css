@@ -37,6 +37,23 @@
   line-height: 1.7;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  color: var(--sky);
+  background: rgba(59, 154, 191, 0.1);
+  border: 1px solid rgba(59, 154, 191, 0.2);
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+}
+
 @media (max-width: 960px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
 }

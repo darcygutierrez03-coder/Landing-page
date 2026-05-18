@@ -11,8 +11,8 @@ export default function Services() {
         <Reveal>
           <p className="ag-eyebrow ag-center">Servicios</p>
           <h2 className="ag-section__title ag-center">
-            Capacidades que<br />
-            <span className="ag-gradient-text">desafían lo posible.</span>
+            Lo que puedo<br />
+            <span className="ag-gradient-text">hacer por ti.</span>
           </h2>
         </Reveal>
 
@@ -23,13 +23,20 @@ export default function Services() {
           viewport={{ once: true, margin: '-60px' }}
           variants={staggerContainer}
         >
-          {SERVICES.map(({ icon: Icon, title, desc }) => (
+          {SERVICES.map(({ icon: Icon, title, desc, tags }) => (
             <motion.div key={title} variants={fadeUp} className={`ag-card ${styles.card}`}>
               <div className={styles.iconWrap}>
                 <Icon size={22} />
               </div>
               <h3 className={styles.cardTitle}>{title}</h3>
               <p className={styles.cardDesc}>{desc}</p>
+              
+              <div className={styles.tags}>
+                {tags.map(tag => (
+                  <span key={tag} className={styles.tag}>{tag}</span>
+                ))}
+              </div>
+
               <div className="ag-card__glow" />
             </motion.div>
           ))}
